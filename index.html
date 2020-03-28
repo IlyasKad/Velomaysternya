@@ -1,14 +1,109 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Velomaysternya</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        
+      <div class="container">
+        <div class="header__content">
+          <nav class="header__additional-menu">
+            <ul class="header__menu-list">
+              <li><a href="#">Покупцям</a></li>
+              <li><a href="#">Контакти</a></li>
+              <li><a href="#">Акції</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__logo-wrapper">
+            <a href="#">
+              <img
+                class="header__logo-img"
+                src="images/main-logo.png"
+                alt="Логотип"
+              />
+            </a>
+            <div class="header__logo-description">
+              Магазин велосипедів
+            </div>
+          </div>
+
+          <div class="header__visitors-sidebar">
+            <div class="header__contacts-data">
+              <ul class="header__contact-list">
+                <li>
+                  <span class="header__contact-item">+38 (068) 92 519 04</span>
+                </li>
+                <li>
+                  <span class="header__contact-item"
+                    >м. Київ вул. Євгена Сверстюка 25</span
+                  >
+                </li>
+                <li>
+                  <span class="header__contact-item"
+                    >Пон-суб з 09:00 до 18:00</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="header__menu-authorization">
+              <a href="#">
+                <img
+                  class="sign-in-logo"
+                  src="images/sign-in-logo.svg"
+                  alt="Sign in logo"
+                />
+              </a>
+              <a href="#">
+                <img src="images/basket-logo.svg" alt="Basket logo logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-</body>
+
+    <!-- header-bottom -->
+
+    <section class="header-bottom">
+      <div class="container">
+        <div class="header-bottom__content">
+
+          <div class="header-bottom__switcher-language">
+            <div class="switcher-language-i" id="switcher-language-ua">
+              <a href="#">ua</a>
+            </div>
+            <div class="switcher-language-i header-bottom__vertical-line">
+              <a href="#">ru</a>
+            </div>
+            <div class="switcher-language-i header-bottom__vertical-line"
+            id="switcher-language-en">
+              <a href="#">en</a>
+            </div>
+          </div>
+
+          <nav class="header-bottom__menu">
+            <ul class="header-bottom__menu-list">
+              <li><a href="#">Велосипеди</a></li>
+              <li><a href="#">Запчастини</a></li>
+              <li><a href="#">Екіпірування</a></li>
+              <li><a href="#">Аксесуари</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
