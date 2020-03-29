@@ -8,10 +8,16 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=cyrillic"
+      href="<https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="css/main.css" />
     <title>Velomaysternya</title>
   </head>
   <body>
@@ -79,7 +85,6 @@
     <section class="header-bottom">
       <div class="container">
         <div class="header-bottom__content">
-
           <div class="header-bottom__switcher-language">
             <div class="switcher-language-i" id="switcher-language-ua">
               <a href="#">ua</a>
@@ -87,8 +92,10 @@
             <div class="switcher-language-i header-bottom__vertical-line">
               <a href="#">ru</a>
             </div>
-            <div class="switcher-language-i header-bottom__vertical-line"
-            id="switcher-language-en">
+            <div
+              class="switcher-language-i header-bottom__vertical-line"
+              id="switcher-language-en"
+            >
               <a href="#">en</a>
             </div>
           </div>
@@ -101,7 +108,95 @@
               <li><a href="#">Аксесуари</a></li>
             </ul>
           </nav>
+
+          <div class="header-bottom__search">
+            <form class="header-bottom__form">
+              <input
+                class="header-bottom__form-item"
+                type="text"
+                placeholder="Пошук"
+              />
+            </form>
+            <button class="header-bottom__form-button" type="submit">
+              Знайти
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="header-slider">
+      <div class="container">
+        <div class="header-slider__content">
+          <div class="header-slider__title">
+            <span class="top-title">
+              Нова колекція
+            </span>
+            <div class="bottom-title">
+              2020
+            </div>
+          </div>
+          <div class="header-slider__description">
+            28" Cannondale TOPSTONE
+          </div>
+          <a class="header-slider__btn" href="#">Придбати</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu search of product  -->
+    <section class="search-product">
+      <div class="container">
+        <div class="search-product__content">
+          <div class="search-product__title">
+            ми допоможемо підібрати ідеальний велосипед для вас!
+          </div>
+
+          <form class="search-product__form">
+            <div class="search-product__form-item">
+              <label for="sex" class="search-product__parametrs">Стать</label>
+              <input
+                class="form-item sex-form-item"
+                type="text"
+                placeholder="Жінка"
+              />
+            </div>
+
+            <div class="search-product__form-item">
+              <label for="height" class="search-product__parametrs"
+                >Зріст</label
+              >
+              <input class="form-item height-form-item" type="text" placeholder="170 см" />
+            </div>
+
+            <div class="search-product__form-item">
+              <label for="weight" class="search-product__parametrs">Вага</label>
+              <input class="form-item weight-form-item" type="text" placeholder="65 кг" />
+            </div>
+
+            <div class="search-product__form-item">
+              <label for="where-will-you-ride" class="search-product__parametrs"
+                >Де будете кататися</label
+              >
+              <input class="form-item where-will-you-ride-form-item" type="text" placeholder="Місто" />
+            </div>
+
+            <div class="search-product__form-item">
+              <label for="price" class="search-product__parametrs">Ціна</label>
+              <input
+                class="form-item price-form-item"
+                type="text"
+                placeholder="3000 - 5500 грн"
+              />
+              
+            </div>
+             <div class="search-product__wrapper-btn">
+              <a class="search-product__btn" href="#">Підібрати</a>
+            </div>
+          </form>
+         
           
+
         </div>
       </div>
     </section>
