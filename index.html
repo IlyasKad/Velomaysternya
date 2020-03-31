@@ -15,8 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <!-- <link rel="stylesheet" href="css/bootstrap-grid.css" /> -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+
     <link rel="stylesheet" href="css/main.css" />
     <title>Velomaysternya</title>
   </head>
@@ -49,7 +48,9 @@
             <div class="header__contacts-data">
               <ul class="header__contact-list">
                 <li>
-                  <span class="header__contact-item">+38 (068) 92 519 04</span>
+                  <span class="header__contact-item-unique"
+                    >+38 (068) 92 519 04</span
+                  >
                 </li>
                 <li>
                   <span class="header__contact-item"
@@ -85,6 +86,9 @@
     <section class="header-bottom">
       <div class="container">
         <div class="header-bottom__content">
+          <div class="header-bottom__drop-down-menu">
+            <span></span>
+          </div>
           <div class="header-bottom__switcher-language">
             <div class="switcher-language-i" id="switcher-language-ua">
               <a href="#">ua</a>
@@ -150,10 +154,10 @@
       <div class="container">
         <div class="search-product__content">
           <div class="search-product__title">
-            ми допоможемо підібрати ідеальний велосипед для вас!
+            підібрати велосипед
           </div>
 
-          <form class="search-product__form">
+          <div class="search-product__form">
             <div class="search-product__form-item">
               <label for="sex" class="search-product__parametrs">Стать</label>
               <input
@@ -183,7 +187,9 @@
               />
             </div>
 
-            <div class="search-product__form-item">
+            <div
+              class="search-product__form-item search-product__form-item-where "
+            >
               <label for="where-will-you-ride" class="search-product__parametrs"
                 >Де будете кататися</label
               >
@@ -202,10 +208,11 @@
                 placeholder="3000 - 5500 грн"
               />
             </div>
-            <div class="search-product__wrapper-btn">
-              <a class="search-product__btn" href="#">Підібрати</a>
-            </div>
-          </form>
+          </div>
+
+          <div class="search-product__wrapper-btn">
+            <a class="search-product__btn" href="#">Підібрати</a>
+          </div>
         </div>
       </div>
     </section>
@@ -272,7 +279,7 @@
               </div>
 
               <div class="tile-products__title-product">
-                Велосипед 29" Cannondale TRAIL - X 2020
+                Велосипед 29" Cannondale TRAIL
               </div>
 
               <div class="tile-products__mark">
@@ -338,7 +345,7 @@
               </div>
 
               <div class="tile-products__title-product">
-                Велосипед 20" Electra Sweet Ride 3i girls G
+                Велосипед 20" Electra Sweet Ride
               </div>
 
               <div class="tile-products__mark">
@@ -404,7 +411,7 @@
               </div>
 
               <div class="tile-products__title-product">
-                Велосипед 26" Pride MARVEL 6.3 рама - XS
+                Велосипед 26" Pride MARVEL 6.3
               </div>
 
               <div class="tile-products__mark">
@@ -470,7 +477,7 @@
               </div>
 
               <div class="tile-products__title-product">
-                Велосипед 26" Electra електро привод EU
+                Велосипед 26" Electra електро
               </div>
 
               <div class="tile-products__mark">
@@ -536,7 +543,7 @@
               </div>
 
               <div class="tile-products__title-product">
-                Велосипед 29" Cannondale F Carbon 5 2020
+                Велосипед 29" Cannondale F Car
               </div>
 
               <div class="tile-products__mark">
@@ -602,7 +609,7 @@
               </div>
 
               <div class="tile-products__title-product">
-                Велосипед 16" Electra Sprocket 1 EU girls
+                Велосипед 16" Electra Sprocket 1
               </div>
 
               <div class="tile-products__mark">
@@ -652,7 +659,7 @@
                   Безкоштовна доставка
                 </div>
                 <div class="advantages__row-description">
-                  Доставимо безкоштовно замовлення від 3000 грн за адресою.
+                  Доставимо замовлення від 3000 грн безкоштовно.
                 </div>
               </div>
             </div>
@@ -701,7 +708,7 @@
                   Зручна оплата
                 </div>
                 <div class="advantages__row-description">
-                  Оплату можна здійснювати як готівкою, так і через карту банку.
+                  Оплату можна здійснювати через карту і готівкою.
                 </div>
               </div>
             </div>
@@ -719,8 +726,7 @@
                   Гарантія від магазину
                 </div>
                 <div class="advantages__row-description">
-                  Якщо ви заплуталися в величезному виборі, зверніться до наших
-                  фахівців.
+                  Ми надаємо гарантію терміном на 60 днів.
                 </div>
               </div>
             </div>
@@ -735,7 +741,7 @@
                   Щомісячні знижки
                 </div>
                 <div class="advantages__row-description">
-                  Знижки до 70% постійним клієнтам на різні види велосипедів.
+                  Знижки до 70% на різні види велосипедів.
                 </div>
               </div>
             </div>
@@ -752,15 +758,12 @@
             Про компанію
           </div>
           <div class="about-company__description">
-            Наш магазин працює з постачальниками безпосередньо. Ми пропонуємо
-            моделі справжніх брендових велосипедів високої якості. Вони не
+            Ми пропонуємо моделі брендових велосипедів високої якості. Вони не
             підведуть власника в поїздках по місту, прогулянках по природі, під
-            час занять спортом. У нас представлена продукція
-            <br />наступних відомих брендів Apollo, Bellelli, BerGaMont,
-            Cannondale, Cyclone,<br />Doroxhnik, Electra, Ghost, Haibike, Head,
-            Kiddy Moto, Leon, Optima, Orbea, Polygon, Pride, Winner. Ми
-            пропонуємо купити велосипед за найбільш вигідною ціною з доставкою
-            замовлення в Києві. Можлива доставка в інші міста України.
+            час занять спортом. Наш магазин працює з постачальниками на пряму. У
+            нас представлена продукція наступних відомих брендів Apollo,
+            Bellelli, BerGaMont, та інших. Ми пропонуємо купити велосипед за
+            вигідною ціною з доставкою по Києву та іншими містами України.
           </div>
 
           <div class="about-company__menu-icons">
@@ -771,15 +774,12 @@
 
           <div class="about-company__list-subtitle">
             <div class="about-company__subtitle">
-              Працюємо з 2010 року
+              Працюємо <br />з 2010 року
             </div>
             <div class="about-company__subtitle">
-              Сертифікована продукція
+              Сертифікована <br />продукція
             </div>
-            <div class="about-company__subtitle">
-              Більше 20 проданих<br />
-              товарів в день
-            </div>
+            <div class="about-company__subtitle">20 продажів <br />в день</div>
           </div>
 
           <div class="about-company__btn-wrapper">
@@ -810,10 +810,10 @@
               </li>
               <li class="footer-top__contacts-phone">
                 +38 (068) 92 519 04
-                <a href="#">
+                <a class="footer-top__unique" href="#">
                   <img src="images/telegram-icon.svg" alt="telegram icon" />
                 </a>
-                <a href="#">
+                <a class="footer-top__unique" href="#">
                   <img src="images/viber-icon.svg" alt="viber icon" />
                 </a>
               </li>
@@ -826,72 +826,70 @@
             </ul>
           </div>
 
-          <div class="footer-top__main">
-            <div class="footer-top__main-column">
-              <div class="footer-top__column-title">
-                Продукція
-              </div>
-              <ul class="footer-top__column-list">
-                <li>
-                  <a href="#">Велосипеди</a>
-                </li>
-                <li>
-                  <a href="#"> Аксесуари</a>
-                </li>
-                <li>
-                  <a href="#"> Запчастини</a>
-                </li>
-                <li>
-                  <a href="#"> Екіпірування</a>
-                </li>
-              </ul>
+          <div class="footer-top__main-column">
+            <div class="footer-top__column-title">
+              Продукція
             </div>
+            <ul class="footer-top__column-list">
+              <li>
+                <a href="#">Велосипеди</a>
+              </li>
+              <li>
+                <a href="#"> Аксесуари</a>
+              </li>
+              <li>
+                <a href="#"> Запчастини</a>
+              </li>
+              <li>
+                <a href="#"> Екіпірування</a>
+              </li>
+            </ul>
+          </div>
 
-            <div class="footer-top__main-column">
-              <div class="footer-top__column-title">
-                Про магазин
-              </div>
-              <ul class="footer-top__column-list">
-                <li>
-                  <a href="#">Про нас</a>
-                </li>
-                <li>
-                  <a href="#"> Відгуки про магазин</a>
-                </li>
-                <li>
-                  <a href="#">Гарантія</a>
-                </li>
-                <li>
-                  <a href="#">Оплата та доставка</a>
-                </li>
-                <li>
-                  <a href="#">Розстрочка</a>
-                </li>
-              </ul>
+          <div class="footer-top__main-column">
+            <div class="footer-top__column-title">
+              Про магазин
             </div>
+            <ul class="footer-top__column-list">
+              <li>
+                <a href="#">Про нас</a>
+              </li>
+              <li>
+                <a href="#"> Відгуки про магазин</a>
+              </li>
+              <li>
+                <a href="#">Гарантія</a>
+              </li>
+              <li>
+                <a href="#">Оплата та доставка</a>
+              </li>
+              <li>
+                <a href="#">Розстрочка</a>
+              </li>
+            </ul>
+          </div>
 
-            <div class="footer-top__main-column">
-              <div class="footer-top__column-title">
-                Додаткові
-              </div>
-              <ul class="footer-top__column-list">
-                <li>
-                  <a href="#"> Виробники</a>
-                </li>
-                <li>
-                  <a href="#"> FAQ</a>
-                </li>
-                <li>
-                  <a href="#"> Блог</a>
-                </li>
-                <li>
-                  <a href="#"> Контакти</a>
-                </li>
-                <li>
-                  <a href="#">Акції</a>
-                </li>
-              </ul>
+          <div class="footer-top__main-column">
+            <div class="footer-top__column-title">
+              Додаткові
             </div>
+            <ul class="footer-top__column-list">
+              <li>
+                <a href="#"> Виробники</a>
+              </li>
+              <li>
+                <a href="#"> FAQ</a>
+              </li>
+              <li>
+                <a href="#"> Блог</a>
+              </li>
+              <li>
+                <a href="#"> Контакти</a>
+              </li>
+              <li>
+                <a href="#">Акції</a>
+              </li>
+            </ul>
           </div>
 
           <div class="footer-top__join">
@@ -901,16 +899,28 @@
             <div class="footer-top__join-menu-icons">
               <div class="footer-top__join-list">
                 <a href="#">
-                  <img src="images/youtube-icon.svg" alt="facebook icon"
+                  <img
+                    class="footer-top__icon-img"
+                    src="images/youtube-icon.svg"
+                    alt="facebook icon"
                 /></a>
                 <a href="#">
-                  <img src=" images/instagram-icon.svg" alt="instagram icon"
+                  <img
+                    class="footer-top__icon-img"
+                    src=" images/instagram-icon.svg"
+                    alt="instagram icon"
                 /></a>
                 <a href="#">
-                  <img src="images/facebook-icon.svg" alt="facebook icon"
+                  <img
+                    class="footer-top__icon-img"
+                    src="images/facebook-icon.svg"
+                    alt="facebook icon"
                 /></a>
                 <a href="#">
-                  <img src="images/twitter-icon.svg" alt="facebook icon"
+                  <img
+                    class="footer-top__icon-img"
+                    src="images/twitter-icon.svg"
+                    alt="facebook icon"
                 /></a>
               </div>
             </div>
@@ -929,6 +939,7 @@
       </div>
     </section>
 
+    <!-- footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer__content">
@@ -951,7 +962,7 @@
               <a href="#">Політика використання файлів cookie</a>
             </div>
             <div class="footer__item">
-              <a href="#">Політика захисту авторських прав</a>
+              <a href="#">Політика авторських прав</a>
             </div>
           </div>
           <div class="footer__row-second">
