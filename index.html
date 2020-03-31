@@ -15,8 +15,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <!-- <link rel="stylesheet" href="css/bootstrap-grid.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <!-- <link rel="stylesheet" href="css/bootstrap-grid.css" /> -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
     <link rel="stylesheet" href="css/main.css" />
     <title>Velomaysternya</title>
   </head>
@@ -36,7 +36,7 @@
             <a href="#">
               <img
                 class="header__logo-img"
-                src="images/main-logo.png"
+                src="images/main-logo.svg"
                 alt="Логотип"
               />
             </a>
@@ -125,6 +125,7 @@
       </div>
     </section>
 
+    <!-- header slider -->
     <section class="header-slider">
       <div class="container">
         <div class="header-slider__content">
@@ -166,19 +167,31 @@
               <label for="height" class="search-product__parametrs"
                 >Зріст</label
               >
-              <input class="form-item height-form-item" type="text" placeholder="170 см" />
+              <input
+                class="form-item height-form-item"
+                type="text"
+                placeholder="170 см"
+              />
             </div>
 
             <div class="search-product__form-item">
               <label for="weight" class="search-product__parametrs">Вага</label>
-              <input class="form-item weight-form-item" type="text" placeholder="65 кг" />
+              <input
+                class="form-item weight-form-item"
+                type="text"
+                placeholder="65 кг"
+              />
             </div>
 
             <div class="search-product__form-item">
               <label for="where-will-you-ride" class="search-product__parametrs"
                 >Де будете кататися</label
               >
-              <input class="form-item where-will-you-ride-form-item" type="text" placeholder="Місто" />
+              <input
+                class="form-item where-will-you-ride-form-item"
+                type="text"
+                placeholder="Місто"
+              />
             </div>
 
             <div class="search-product__form-item">
@@ -188,17 +201,769 @@
                 type="text"
                 placeholder="3000 - 5500 грн"
               />
-              
             </div>
-             <div class="search-product__wrapper-btn">
+            <div class="search-product__wrapper-btn">
               <a class="search-product__btn" href="#">Підібрати</a>
             </div>
           </form>
-         
-          
-
         </div>
       </div>
     </section>
+
+    <!-- tile of products -->
+
+    <section class="tile-products">
+      <div class="container">
+        <div class="tile-products__content">
+          <div class="tile-products__title">
+            <div class="tile-products__title-item">
+              <a class="tile-products__title-link" href="#">нові</a>
+            </div>
+            <div class="tile-products__title-item">
+              <a class="tile-products__title-link" href="#">акції</a>
+            </div>
+            <div class="tile-products__title-item">
+              <a class="tile-products__title-link" href="#">хіти</a>
+            </div>
+          </div>
+
+          <div class="tile-products__main">
+            <!-- 1 tile -->
+            <div class="tile-products__item">
+              <div class="tile-products__item-status">
+                <img src="images/sale20-logo.svg" alt="sale 20%" />
+              </div>
+
+              <div class="tile-products__icons">
+                <div class="tile-products__icon-compare">
+                  <a href="#">
+                    <img src="images/compare-logo.svg" alt="compare icon" />
+                  </a>
+                </div>
+                <div class="tile-products__icon-basket">
+                  <a href="#">
+                    <img src="images/basket-logo.svg" alt="basket icon" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__img-product">
+                <img src="images/29CannondaleTRAIL-X2020.svg" alt="Bike" />
+              </div>
+
+              <div class="tile-products__change-color">
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/color000.svg" alt="color" />
+                  </a>
+                </div>
+
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/colorF85E5E.svg" alt="color" />
+                  </a>
+                </div>
+
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/color6EF7A5.svg" alt="color" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__title-product">
+                Велосипед 29" Cannondale TRAIL - X 2020
+              </div>
+
+              <div class="tile-products__mark">
+                <a href="#">
+                  <img src="images/5-stars.-logo.svg" alt="5 stars" />
+                </a>
+                <div class="tile-products__review">
+                  <a href="#">
+                    (11 відгуків)
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__price tile-products__price-sale">
+                8000 грн
+              </div>
+
+              <a class="tile-products__btn" href="#">Купити</a>
+            </div>
+
+            <!-- 2 tile -->
+
+            <div class="tile-products__item">
+              <div class="tile-products__item-status">
+                <img src="images/new-logo.svg" alt="new logo" />
+              </div>
+
+              <div class="tile-products__icons">
+                <div class="tile-products__icon-compare">
+                  <a href="#">
+                    <img src="images/compare-logo.svg" alt="compare icon" />
+                  </a>
+                </div>
+                <div class="tile-products__icon-basket">
+                  <a href="#">
+                    <img src="images/basket-logo.svg" alt="basket icon" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__img-product">
+                <img src="images/20ElectraSweetRide3igirlsG.svg" alt="Bike" />
+              </div>
+
+              <div class="tile-products__change-color">
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/color96F3F1.svg" alt="color" />
+                  </a>
+                </div>
+
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/colorA65EF8.svg" alt="color" />
+                  </a>
+                </div>
+
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/colorF85EED.svg" alt="color" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__title-product">
+                Велосипед 20" Electra Sweet Ride 3i girls G
+              </div>
+
+              <div class="tile-products__mark">
+                <a href="#">
+                  <img src="images/5-stars.-logo.svg" alt="5 stars" />
+                </a>
+                <div class="tile-products__review">
+                  <a href="#">
+                    (7 відгуків)
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__price">
+                11440 грн
+              </div>
+
+              <a class="tile-products__btn" href="#">Купити</a>
+            </div>
+
+            <!-- 3 tile -->
+
+            <div class="tile-products__item">
+              <div class="tile-products__item-status">
+                <img src="images/new-logo.svg" alt="new logo" />
+              </div>
+
+              <div class="tile-products__icons">
+                <div class="tile-products__icon-compare">
+                  <a href="#">
+                    <img src="images/compare-logo.svg" alt="compare icon" />
+                  </a>
+                </div>
+                <div class="tile-products__icon-basket">
+                  <a href="#">
+                    <img src="images/basket-logo.svg" alt="basket icon" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__img-product">
+                <img src="images/26PrideMARVEL6.3рама-XS.svg" alt="Bike" />
+              </div>
+
+              <div class="tile-products__change-color">
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/colorFF8D0A.svg" alt="color" />
+                  </a>
+                </div>
+
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/colorBEFF0A.svg" alt="color" />
+                  </a>
+                </div>
+
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/color000.svg" alt="color" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__title-product">
+                Велосипед 26" Pride MARVEL 6.3 рама - XS
+              </div>
+
+              <div class="tile-products__mark">
+                <a href="#">
+                  <img src="images/4-stars-logo.svg" alt="5 stars" />
+                </a>
+                <div class="tile-products__review">
+                  <a href="#">
+                    (14 відгуків)
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__price">
+                8990 грн
+              </div>
+
+              <a class="tile-products__btn" href="#">Купити</a>
+            </div>
+
+            <!-- 4 tile -->
+
+            <div class="tile-products__item">
+              <div class="tile-products__item-status">
+                <img src="images/new-logo.svg" alt="new logo" />
+              </div>
+
+              <div class="tile-products__icons">
+                <div class="tile-products__icon-compare">
+                  <a href="#">
+                    <img src="images/compare-logo.svg" alt="compare icon" />
+                  </a>
+                </div>
+                <div class="tile-products__icon-basket">
+                  <a href="#">
+                    <img src="images/basket-logo.svg" alt="basket icon" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__img-product">
+                <img src="images/26ElectraелектроприводEU.svg" alt="Bike" />
+              </div>
+
+              <div class="tile-products__change-color">
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/colorFFFFFF.svg" alt="color" />
+                  </a>
+                </div>
+
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/color5FA192.svg" alt="color" />
+                  </a>
+                </div>
+
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/colorFC1F25.svg" alt="color" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__title-product">
+                Велосипед 26" Electra електро привод EU
+              </div>
+
+              <div class="tile-products__mark">
+                <a href="#">
+                  <img src="images/5-stars.-logo.svg" alt="5 stars" />
+                </a>
+                <div class="tile-products__review">
+                  <a href="#">
+                    (22 відгуків)
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__price">
+                32340 грн
+              </div>
+
+              <a class="tile-products__btn" href="#">Купити</a>
+            </div>
+
+            <!-- tile 5 -->
+
+            <div class="tile-products__item">
+              <div class="tile-products__item-status">
+                <img src="images/new-logo.svg" alt="new logo" />
+              </div>
+
+              <div class="tile-products__icons">
+                <div class="tile-products__icon-compare">
+                  <a href="#">
+                    <img src="images/compare-logo.svg" alt="compare icon" />
+                  </a>
+                </div>
+                <div class="tile-products__icon-basket">
+                  <a href="#">
+                    <img src="images/basket-logo.svg" alt="basket icon" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__img-product">
+                <img src="images/29CannondaleFCarbon52020.svg" alt="Bike" />
+              </div>
+
+              <div class="tile-products__change-color">
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/colorBEFF0A.svg" alt="color" />
+                  </a>
+                </div>
+
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/colorFC1F25.svg" alt="color" />
+                  </a>
+                </div>
+
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/colorFF8D0A.svg" alt="color" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__title-product">
+                Велосипед 29" Cannondale F Carbon 5 2020
+              </div>
+
+              <div class="tile-products__mark">
+                <a href="#">
+                  <img src="images/4-stars-logo.svg" alt="5 stars" />
+                </a>
+                <div class="tile-products__review">
+                  <a href="#">
+                    (10 відгуків)
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__price">
+                27000 грн
+              </div>
+
+              <a class="tile-products__btn" href="#">Купити</a>
+            </div>
+
+            <!-- 6 tile -->
+
+            <div class="tile-products__item">
+              <div class="tile-products__item-status">
+                <img src="images/new-logo.svg" alt="new logo" />
+              </div>
+
+              <div class="tile-products__icons">
+                <div class="tile-products__icon-compare">
+                  <a href="#">
+                    <img src="images/compare-logo.svg" alt="compare icon" />
+                  </a>
+                </div>
+                <div class="tile-products__icon-basket">
+                  <a href="#">
+                    <img src="images/basket-logo.svg" alt="basket icon" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__img-product">
+                <img src="images/16ElectraSprocket1EUgirls.svg" alt="Bike" />
+              </div>
+
+              <div class="tile-products__change-color">
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/color96F3F1.svg" alt="color" />
+                  </a>
+                </div>
+
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images\colorA65EF8.svg" alt="color" />
+                  </a>
+                </div>
+
+                <div class="tile-products__change-color-wrapper">
+                  <a href="#">
+                    <img src="images/colorF85EED.svg" alt="color" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__title-product">
+                Велосипед 16" Electra Sprocket 1 EU girls
+              </div>
+
+              <div class="tile-products__mark">
+                <a href="#">
+                  <img src="images/5-stars.-logo.svg" alt="5 stars" />
+                </a>
+                <div class="tile-products__review">
+                  <a href="#">
+                    (5 відгуків)
+                  </a>
+                </div>
+              </div>
+
+              <div class="tile-products__price">
+                6200 грн
+              </div>
+
+              <a class="tile-products__btn" href="#">Купити</a>
+            </div>
+          </div>
+          <div class="tile-products__btn-see-more">
+            <a class="tile-products__btn-link" href="#">
+              Подивитися більше
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section of advantages  -->
+    <section class="advantages">
+      <div class="container">
+        <div class="advantages__content">
+          <div class="advantages__title">
+            чому обирають нас
+          </div>
+
+          <div class="advantages__row">
+            <div class="advantages__row-item">
+              <img
+                class="advantages__row-icon"
+                src="images/advantages-icon1.svg"
+                alt="icon of advantages"
+              />
+              <div class="advantages__row-name-icon">
+                <div class="advantages__row-title">
+                  Безкоштовна доставка
+                </div>
+                <div class="advantages__row-description">
+                  Доставимо безкоштовно замовлення від 3000 грн за адресою.
+                </div>
+              </div>
+            </div>
+            <div class="advantages__row-item">
+              <img
+                class="advantages__row-icon"
+                src="images/advantages-icon2.svg"
+                alt="icon of advantages"
+              />
+              <div class="advantages__row-name-icon">
+                <div class="advantages__row-title">
+                  Великий вибір товарів
+                </div>
+                <div class="advantages__row-description">
+                  У нас є величезний вибір велосипедів - близько 700 видів.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="advantages__row">
+            <div class="advantages__row-item">
+              <img
+                class="advantages__row-icon"
+                src="images/advantages-icon3.svg"
+                alt="icon of advantages"
+              />
+              <div class="advantages__row-name-icon">
+                <div class="advantages__row-title">
+                  Консультація фахівців
+                </div>
+                <div class="advantages__row-description">
+                  Якщо ви заплуталися в величезному виборі, зверніться до наших
+                  фахівців.
+                </div>
+              </div>
+            </div>
+            <div class="advantages__row-item">
+              <img
+                class="advantages__row-icon"
+                src="images/advantages-icon4.svg"
+                alt="icon of advantages"
+              />
+              <div class="advantages__row-name-icon">
+                <div class="advantages__row-title">
+                  Зручна оплата
+                </div>
+                <div class="advantages__row-description">
+                  Оплату можна здійснювати як готівкою, так і через карту банку.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="advantages__row">
+            <div class="advantages__row-item">
+              <img
+                class="advantages__row-icon"
+                src="images/advantages-icon5.svg"
+                alt="icon of advantages"
+              />
+              <div class="advantages__row-name-icon">
+                <div class="advantages__row-title">
+                  Гарантія від магазину
+                </div>
+                <div class="advantages__row-description">
+                  Якщо ви заплуталися в величезному виборі, зверніться до наших
+                  фахівців.
+                </div>
+              </div>
+            </div>
+            <div class="advantages__row-item">
+              <img
+                class="advantages__row-icon"
+                src="images/advantages-icon6.svg"
+                alt="icon of advantages"
+              />
+              <div class="advantages__row-name-icon">
+                <div class="advantages__row-title">
+                  Щомісячні знижки
+                </div>
+                <div class="advantages__row-description">
+                  Знижки до 70% постійним клієнтам на різні види велосипедів.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about company -->
+    <section class="about-company">
+      <div class="container">
+        <div class="about-company__content">
+          <div class="about-company__title">
+            Про компанію
+          </div>
+          <div class="about-company__description">
+            Наш магазин працює з постачальниками безпосередньо. Ми пропонуємо
+            моделі справжніх брендових велосипедів високої якості. Вони не
+            підведуть власника в поїздках по місту, прогулянках по природі, під
+            час занять спортом. У нас представлена продукція
+            <br />наступних відомих брендів Apollo, Bellelli, BerGaMont,
+            Cannondale, Cyclone,<br />Doroxhnik, Electra, Ghost, Haibike, Head,
+            Kiddy Moto, Leon, Optima, Orbea, Polygon, Pride, Winner. Ми
+            пропонуємо купити велосипед за найбільш вигідною ціною з доставкою
+            замовлення в Києві. Можлива доставка в інші міста України.
+          </div>
+
+          <div class="about-company__menu-icons">
+            <img src="images/about-clock.svg" alt="clock icon" />
+            <img src="images/about-certificate.svg" alt="certificate icon" />
+            <img src="images/about-sold.svg" alt="sold icon" />
+          </div>
+
+          <div class="about-company__list-subtitle">
+            <div class="about-company__subtitle">
+              Працюємо з 2010 року
+            </div>
+            <div class="about-company__subtitle">
+              Сертифікована продукція
+            </div>
+            <div class="about-company__subtitle">
+              Більше 20 проданих<br />
+              товарів в день
+            </div>
+          </div>
+
+          <div class="about-company__btn-wrapper">
+            <a class="about-company__btn" href="#">Замовити</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-top">
+      <div class="container">
+        <div class="footer-top__content">
+          <div class="footer-top__contacts-menu">
+            <div id="footer-top__logo">
+              <a href="#">
+                <img
+                  src="images/footer-top-logo.svg"
+                  alt="logo of top footer "
+                />
+              </a>
+            </div>
+            <ul class="footer-top__contacts-list">
+              <li class="footer-top__contacts-address">
+                м. Київ вул. Євгена Сверстюка 25
+              </li>
+              <li class="footer-top__contacts-address">
+                м. Львів вул. Липинського 36
+              </li>
+              <li class="footer-top__contacts-phone">
+                +38 (068) 92 519 04
+                <a href="#">
+                  <img src="images/telegram-icon.svg" alt="telegram icon" />
+                </a>
+                <a href="#">
+                  <img src="images/viber-icon.svg" alt="viber icon" />
+                </a>
+              </li>
+              <li class="footer-top__email">
+                info@velokratia.com.ua
+              </li>
+              <li class="footer-top__schedule">
+                Пон-суб з 09:00 до 18:00
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-top__main">
+            <div class="footer-top__main-column">
+              <div class="footer-top__column-title">
+                Продукція
+              </div>
+              <ul class="footer-top__column-list">
+                <li>
+                  <a href="#">Велосипеди</a>
+                </li>
+                <li>
+                  <a href="#"> Аксесуари</a>
+                </li>
+                <li>
+                  <a href="#"> Запчастини</a>
+                </li>
+                <li>
+                  <a href="#"> Екіпірування</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-top__main-column">
+              <div class="footer-top__column-title">
+                Про магазин
+              </div>
+              <ul class="footer-top__column-list">
+                <li>
+                  <a href="#">Про нас</a>
+                </li>
+                <li>
+                  <a href="#"> Відгуки про магазин</a>
+                </li>
+                <li>
+                  <a href="#">Гарантія</a>
+                </li>
+                <li>
+                  <a href="#">Оплата та доставка</a>
+                </li>
+                <li>
+                  <a href="#">Розстрочка</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-top__main-column">
+              <div class="footer-top__column-title">
+                Додаткові
+              </div>
+              <ul class="footer-top__column-list">
+                <li>
+                  <a href="#"> Виробники</a>
+                </li>
+                <li>
+                  <a href="#"> FAQ</a>
+                </li>
+                <li>
+                  <a href="#"> Блог</a>
+                </li>
+                <li>
+                  <a href="#"> Контакти</a>
+                </li>
+                <li>
+                  <a href="#">Акції</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-top__join">
+            <div class="footer-top__join-title">
+              Стежте за нами
+            </div>
+            <div class="footer-top__join-menu-icons">
+              <div class="footer-top__join-list">
+                <a href="#">
+                  <img src="images/youtube-icon.svg" alt="facebook icon"
+                /></a>
+                <a href="#">
+                  <img src=" images/instagram-icon.svg" alt="instagram icon"
+                /></a>
+                <a href="#">
+                  <img src="images/facebook-icon.svg" alt="facebook icon"
+                /></a>
+                <a href="#">
+                  <img src="images/twitter-icon.svg" alt="facebook icon"
+                /></a>
+              </div>
+            </div>
+            <form class="footer-top__join-form">
+              <input
+                class="footer-top__form-item"
+                type="text"
+                placeholder="Введіть свій E-mail"
+              />
+            </form>
+            <div class="footer-top__join-btn-wrapper">
+              <a class="footer-top__join-btn" href="#">Підписатися</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__row-first">
+            <div class="footer-logo">
+              <a href="#">
+                <img src="images/footer-logo.svg" alt="footer logo" />
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="#">Про компанію</a>
+            </div>
+            <div class="footer__item">
+              <a href="#">Угода користувача</a>
+            </div>
+            <div class="footer__item">
+              <a href="#">Політика конфіденційності</a>
+            </div>
+            <div class="footer__item">
+              <a href="#">Політика використання файлів cookie</a>
+            </div>
+            <div class="footer__item">
+              <a href="#">Політика захисту авторських прав</a>
+            </div>
+          </div>
+          <div class="footer__row-second">
+            <div class="footer__item">
+              <a href="#">Політика торгової марки</a>
+            </div>
+            <div class="footer__item">
+              <a href="#">Правила спільноти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
