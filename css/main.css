@@ -101,6 +101,10 @@ ul {
   background-color: #ebebeb;
 }
 
+.header-bottom__drop-down-menu{
+  display: none;
+}
+
 .header-bottom__content {
   height: 100px;
   display: flex;
@@ -729,6 +733,9 @@ ul {
   max-width: 317px;
 }
 
+/* ============================================================= */
+
+
 @media (max-width: 1200px) {
   .tile-products__main {
     display: flex;
@@ -774,6 +781,7 @@ ul {
   }
 
   .header-bottom__drop-down-menu {
+    display: block;
     position: relative;
     width: 24px;
     height: 18px;
