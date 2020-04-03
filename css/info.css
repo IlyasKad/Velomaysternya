@@ -795,9 +795,7 @@ ul {
   .hamburger-menu {
     display: block;
   }
-  .hamburger-menu {
-    display: block;
-  }
+
 
   #menu__toggle {
     opacity: 0;
@@ -1310,6 +1308,9 @@ ul {
 
   .menu__btn{
     top: 32px;
+  }
+  .menu__box{
+    padding-top: 32px;
   }
 }
 

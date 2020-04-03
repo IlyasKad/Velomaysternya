@@ -101,7 +101,7 @@ ul {
   background-color: #ebebeb;
 }
 
-.header-bottom__drop-down-menu{
+.hamburger-menu {
   display: none;
 }
 
@@ -780,37 +780,143 @@ ul {
     width: 720px;
   }
 
-  .header-bottom__drop-down-menu {
+ 
+  
+
+  .header__content {
+    display: none;
+  }
+
+  .hamburger-menu {
     display: block;
-    position: relative;
-    width: 24px;
-    height: 18px;
+  }
+  
+  #menu__toggle {
+    opacity: 0;
   }
 
-  .header-bottom__drop-down-menu span {
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 36px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 4;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
     width: 100%;
     height: 2px;
     background-color: #707070;
-    top: 9px;
-    position: absolute;
   }
 
-  .header-bottom__drop-down-menu::after,
-  .header-bottom__drop-down-menu::before {
+  .menu__btn > span::before {
     content: "";
-    width: 100%;
-    height: 2px;
-    background-color: #707070;
-    position: absolute;
+    top: -8px;
   }
 
-  .header-bottom__drop-down-menu::after {
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
     top: 0;
+    left: -100%;
+    width: 325px;
+    height: 100%;
+    margin: 0;
+    padding: 40px 0 10px;
+    list-style: none;
+
+    background-color: #fff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    z-index: 3;
   }
 
-  .header-bottom__drop-down-menu::before {
-    bottom: 0;
+  .velo-logo{
+    /* margin-top: 30px; */
+    padding-left: 90px;
   }
+
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .menu__item-top{
+    padding-top: 25px ;
+  }
+
+  .menu__item:hover {
+    background-color: #cfd8dc;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+  .menu__box {
+    transition-duration: 0.25s;
+  }
+  .menu__item {
+    transition-duration: 0.25s;
+  }
+
+  .menu-item-unique {
+    margin: 10px 0px;
+  }
+
+  .menu__box-list-adress {
+    margin-top: 40px;
+  }
+
+  .menu__box{
+    padding-top: 38px;
+  }
+  
+
+  .menu__box-adress {
+    padding: 6px 24px;
+    font-weight: 400;
+  }
+
+  .footer__content {
+    display: none;
+  }
+ 
+
 
   .header-slider {
     background-image: url(../images/header-slider-tablet.svg);
@@ -1108,9 +1214,7 @@ ul {
   .header__contact-item-unique {
     font-size: 18px;
   }
-  .header-bottom__drop-down-menu span {
-    top: 8px;
-  }
+ 
 
   .search-product__form {
     display: block;
@@ -1314,6 +1418,26 @@ ul {
   }
   .tile-products__title{
     margin-bottom: 30px;
+  }
+
+  .menu__box {
+    width: 275px;
+  }
+
+  .menu__box-list-adress {
+    margin-top: 20px;
+  }
+
+  .velo-logo{
+    padding-left: 70px;
+  }
+
+  .menu__btn{
+    top: 32px;
+  }
+
+  .menu__box{
+    padding-top: 32px;
   }
 }
 
