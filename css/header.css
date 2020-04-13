@@ -89,11 +89,9 @@ ul {
 .header__menu-authorization {
     display: flex;
     justify-content: space-between;
-    padding-left: 21px;
-    padding-top: 70px;
-    width: 80px;
+    margin: 70px 0px 70px 21px;
+    width: 55px;
 }
-
 /* header-bottom */
 
 .header-bottom {

@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.profile__content{
+    padding: 70px 0;
+    display: flex;
+}
+
+.profile__main{
+    margin-left: 90px;
+}
+
+.profile__img{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+}
+
+.profile__data{
+    display: flex;
+}
+
+
+.profile__data-key{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.profile__data-value{
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 50px;
+}
+
+.profile__data-item{
+    margin-bottom: 17px;
+}
+
+.profile__data-item-unique{
+    color: #3e77aa;
+}
+
+.profile__settings{
+    margin-top: 30px;
+}
+
+.profile__settings-item{
+    color: #3e77aa;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.profile__exit{
+    font-size: 20px;
+    font-weight: 600;
+    color: #b00000;
+    margin-top: 42px;
+}
+
+

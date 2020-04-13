@@ -30,7 +30,16 @@
         require_once "container.php";
     } else if ($page == "info") {
         require_once "info.php";
-
+    } else if ($page == "auth") {
+        require_once "auth.php";
+    } else if ($page == "registration") {
+        require_once "registration.php";
+    } else if ($page == "profile") {
+        require_once "profile.php";
+    } else if ($page == "signin") {
+        require_once "signin.php";
+    } else if ($page == "signup") {
+        require_once "signup.php";
     } else if ($page == "contact") {
         require_once "contact.php";
     } else {

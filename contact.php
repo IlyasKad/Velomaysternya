@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/header.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
-    <title>Contact</title>
+    <title>Velomaysternya</title>
 </head>
 
 <?php

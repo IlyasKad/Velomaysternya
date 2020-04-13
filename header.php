@@ -44,7 +44,7 @@
                     </ul>
                 </div>
                 <div class="header__menu-authorization">
-                    <a href="#">
+                    <a href="index.php?page=auth">
                         <img
                                 class="sign-in-logo"
                                 src="images/sign-in-logo.svg"
@@ -83,7 +83,7 @@
                     <li><a class="menu__item" href="#">Екіпірування</a></li>
                     <li><a class="menu__item" href="#">Аксесуари</a></li>
                     <hr class="menu-item-unique" />
-                    <li><a class="menu__item" href="index.php?page=container">Покупцям</a></li>
+                    <li><a class="menu__item" href="index.php?page=auth">Зареєструватися</a></li>
                     <li><a class="menu__item" href="index.php?page=contact">Контакти</a></li>
                     <li><a class="menu__item" href="index.php?page=container">Акції</a></li>
                     <div class="menu__box-list-adress">
