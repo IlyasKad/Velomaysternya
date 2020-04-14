@@ -1,5 +1,8 @@
 <?php
 session_start();
 unset($_SESSION['user']);
-header('Location: auth.php');
+//session_destroy();
+unset($_SESSION[message]);
+header('Location: index.php?page=auth');
 ?>
+

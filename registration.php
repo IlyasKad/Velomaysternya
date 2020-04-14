@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!doctype html>
 <html lang="uk">
 <head>
@@ -15,9 +19,9 @@
 </head>
 <body>
 <?php
-session_start();
+
 if ($_SESSION['user']){
-    header('Location: profile.php');
+    header('Location: index.php?page=profile');
 }
 require_once "header.php";
 

@@ -15,14 +15,8 @@
 </head>
 <body>
 <?php
-session_start();
-if (!$_SESSION['user']){
-    header('Location: auth.php');
-}
-
 require_once "header.php";
 ?>
-
 <section class = "profile">
     <div class="container">
         <div class="profile__content">

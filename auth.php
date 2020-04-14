@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!doctype html>
 <html lang="uk">
 <head>
@@ -15,9 +19,8 @@
 </head>
 <body>
 <?php
-session_start();
 if ($_SESSION['user']){
-    header('Location: profile.php');
+    header('Location: index.php?page=profile');
 }
 require_once "header.php";
 
@@ -37,7 +40,7 @@ require_once "header.php";
                 <input class = "auth__input" type="password" name="password" placeholder="Введіть пароль">
                 <button class="auth__btn" type="submit">Увійти</button>
                 <p class="auth__question">
-                    У вас немає акаунта? - <a class="auth__registration" href="registration.php">зареєструйтесь</a>
+                    У вас немає акаунта? - <a class="auth__registration" href="index.php?page=registration">зареєструйтесь</a>
                 </p>
                 <?php
                     if($_SESSION['message']) {

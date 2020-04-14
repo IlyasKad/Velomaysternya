@@ -17,7 +17,6 @@
 
 <?php
     require_once "header.php";
-
     $namePlaceholder = 'Ім\'я';
     $surnamePlaceholder = 'Прізвище';
     $emailPlaceholder = 'Email';

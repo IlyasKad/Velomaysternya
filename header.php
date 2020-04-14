@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <header class="header">
     <div class="container">
         <div class="header__content">
@@ -33,8 +35,7 @@
                         </li>
                         <li>
                   <span class="header__contact-item"
-                  >м. Київ вул. Євгена Сверстюка 25</span
-                  >
+                  >м. Київ вул. Зарічна 25</span>
                         </li>
                         <li>
                   <span class="header__contact-item"
@@ -44,17 +45,26 @@
                     </ul>
                 </div>
                 <div class="header__menu-authorization">
-                    <a href="index.php?page=auth">
-                        <img
+                    <div class = "header__menu-links">
+                        <a href="index.php?page=auth">
+                            <img
                                 class="sign-in-logo"
                                 src="images/sign-in-logo.svg"
                                 alt="Sign in logo"
-                        />
-                    </a>
-                    <a href="index.php?page=container">
-                        <img src="images/basket-logo.svg" alt="Basket logo logo" />
-                    </a>
+                            />
+                        </a>
+                        <a href="index.php?page=container">
+                            <img src="images/basket-logo.svg" alt="Basket logo logo" />
+                        </a>
+                    </div>
+                    <div class="header__profile-title">
+                        <a href="index.php?page=profile">
+                        <?php
+                        echo $_SESSION['user']['full_name'];
+                        ?> </a>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -79,17 +89,22 @@
                         <a class="menu__item menu__item-top" href="index.php?page=home">Головна</a>
                     </li>
                     <li><a class="menu__item" href="index.php?page=container">Велосипеди</a></li>
-                    <li><a class="menu__item" href="#">Запчастини</a></li>
-                    <li><a class="menu__item" href="#">Екіпірування</a></li>
-                    <li><a class="menu__item" href="#">Аксесуари</a></li>
+                    <li><a class="menu__item" href="index.php?page=container">Запчастини</a></li>
+                    <li><a class="menu__item" href="index.php?page=container">Екіпірування</a></li>
+                    <li><a class="menu__item" href="index.php?page=container">Аксесуари</a></li>
                     <hr class="menu-item-unique" />
                     <li><a class="menu__item" href="index.php?page=auth">Зареєструватися</a></li>
                     <li><a class="menu__item" href="index.php?page=contact">Контакти</a></li>
                     <li><a class="menu__item" href="index.php?page=container">Акції</a></li>
+                    <a class="menu__item-profile" href="index.php?page=profile">
+                            <?php
+                                echo $_SESSION['user']['full_name'];
+                            ?>
+                        </a>
                     <div class="menu__box-list-adress">
                         <div class="menu__box-adress">+38 (068) 92 519 04</div>
                         <div class="menu__box-adress">
-                            м. Київ вул. Євгена Сверстюка 25
+                            м. Київ вул. Зарічна 25
                         </div>
                         <div class="menu__box-adress">Пон-суб з 09:00 до 18:00</div>
                     </div>
@@ -115,9 +130,9 @@
             <nav class="header-bottom__menu">
                 <ul class="header-bottom__menu-list">
                     <li><a href="index.php?page=container">Велосипеди</a></li>
-                    <li><a href="#">Запчастини</a></li>
-                    <li><a href="#">Екіпірування</a></li>
-                    <li><a href="#">Аксесуари</a></li>
+                    <li><a href="index.php?page=container">Запчастини</a></li>
+                    <li><a href="index.php?page=container">Екіпірування</a></li>
+                    <li><a href="index.php?page=container">Аксесуари</a></li>
                 </ul>
             </nav>
 

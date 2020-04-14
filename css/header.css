@@ -84,14 +84,31 @@ ul {
 
 .header__visitors-sidebar {
     display: flex;
+    justify-content:space-between ;
+    width: 300px;
 }
 
 .header__menu-authorization {
+    margin: 70px 0px 70px 40px;
+    position: relative;
+}
+
+.header__menu-links{
     display: flex;
     justify-content: space-between;
-    margin: 70px 0px 70px 21px;
     width: 55px;
+    right: 0;
+    position: absolute;
 }
+
+.header__profile-title{
+    margin-top: 24px;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+
 /* header-bottom */
 
 .header-bottom {
@@ -283,6 +300,13 @@ ul {
         text-decoration: none;
     }
 
+    .menu__item-profile{
+        margin-left: 24px;
+        /*top: 15px;*/
+        font-size: 17px;
+        line-height: 30px;
+    }
+
     .menu__item-top {
         padding-top: 25px;
     }
@@ -329,11 +353,11 @@ ul {
     }
 
     .menu__box-list-adress {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     .menu__box-adress {
-        padding: 6px 24px;
+        padding: 3px 24px;
         font-weight: 400;
     }
 

@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if (empty($_SESSION['user']) && $_GET['page'] == 'profile'){
+    header('Location: index.php?page=auth');
+}
+?>
+
 <!doctype html>
 <html lang="uk">
 <head>
@@ -36,12 +44,9 @@
         require_once "registration.php";
     } else if ($page == "profile") {
         require_once "profile.php";
-    } else if ($page == "signin") {
-        require_once "signin.php";
-    } else if ($page == "signup") {
-        require_once "signup.php";
     } else if ($page == "contact") {
         require_once "contact.php";
+
     } else {
         require_once "home.php";
     }
