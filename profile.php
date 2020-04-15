@@ -27,7 +27,8 @@ require_once "header.php";
                         <div class="profile__data-item">Ваше ім'я:</div>
                         <div class="profile__data-item">Ваша пошта:</div>
                         <div class="profile__data-item">Телефон:</div>
-                        <div class="profile__data-item">Мова спілкування:</div>
+                        <div class="profile__data-item profile__data-item-del">Мова спілкування:</div>
+                        <div class="profile__data-item profile__data-item-add">Мова:</div>
                         <div class="profile__data-item">На рахунку:</div>
                     </div>
                     <div class="profile__data-value">

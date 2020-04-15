@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="contact__middle-section">
-                    <form action="index.php?page=contact" method="post" class="form">
+                    <form action="index.php?page=contact" method="post" class="contact__form">
                         <input class="form__item " type="text" name="name" placeholder="<?=$namePlaceholder?>" />
                         <input class="form__item form__item-unique" type="text" name="surname" placeholder="<?=$surnamePlaceholder?>" />
                         <input class="form__item " type="email" name="email" placeholder="<?=$emailPlaceholder?>"" />
@@ -86,7 +86,7 @@
                                     alt="Home icon"
                                 />
                                 <span class="contact__item-description">
-                                    м.Київ вулиця Миколи Пимоненка 8
+                                    м. Київ вул. Зарічна 25
                                 </span>
                             </li>
                         </ul>
